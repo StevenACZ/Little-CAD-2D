@@ -5,11 +5,11 @@ import os
 var = "cls"
 
 #-------------FUNCIONES DE ANIMACION-------------
-def steven_nombre():
+def team_nombres():
     os.system(var)
-    print("+----------+")
+    print("+------------+")
     print("|  CREADORES |")
-    print("+----------+")
+    print("+------------+")
 
 
     time.sleep(1)

@@ -1,23 +1,17 @@
 #LIBRERIAS A USAR
 from funciones import *
-import time
-import os
-import itertools
+import time          #CALCULAR TIEMPO
+import os            #LIMPIAR LA PANTALLA
+import itertools     #MATRICES
 
 #TIPO DE OS
 var = "cls"
 
-#DESARROLLAOR = D
-#CLIENTE = C
+#NOMBRES
+team_nombres()
 
-modo = input("> ")
-
-if modo == "C":
-    #NOMBRE "Steven Angel Coaila Zaa"
-    steven_nombre()
-
-    #ABRIENDO PROGRAMA
-    abriendo_programa()
+#ABRIENDO PROGRAMA
+abriendo_programa()
 
 #MENU OPCIONES
 opciones = ["1. Agregar una linea               ",
@@ -59,19 +53,7 @@ while True:
     os.system(var)
 
     if opcion == "1":
-        #RECTA
-        alto = 20 #82
-        largo = 20 #42
-
-        matriz = crear_matriz(alto, largo) #GENERA LA MATRIZ
-        generar_primer_cuadrante(alto, largo, matriz) #CREA EL PRIMER CUADRANTE
-
-        for x, y in itertools.product(range(20), range(20)):  # RANGO DE LA RECTA (ALTO, LARGO)
-            ecuacion = y = -1 * x + 19  # ECUACION DE LA RECTA
-            if ecuacion >= 1 and ecuacion <= 19:  # LARGO X ALTURA (VISIBLE)
-                matriz[x][y] = "X"  # SIMBOLO DE LA ECUACION
-
-        imprimir_matriz(alto, largo, matriz) #IMPRIME LA MATRIZ
+        print("EN PROCESO...")
         continue
     if opcion == "2":
         #POSICIONES
@@ -93,6 +75,12 @@ while True:
 
         imprimir_matriz(alto, largo, matriz)  # IMPRIME LA MATRIZ
 
+        continue
+    if opcion == "3":
+        print("EN PROCESO...")
+        continue
+    if opcion == "4":
+        print("EN PROCESO...")
         continue
     if opcion == "5":
         # DIBUJO
@@ -125,6 +113,12 @@ while True:
                 matriz[x][y] = "X"
 
         imprimir_matriz(alto, largo, matriz)  # IMPRIME LA MATRIZ
+        continue
+    if opcion == "6":
+        print("EN PROCESO...")
+        continue
+    if opcion == "7":
+        print("EN PROCESO...")
         continue
     if opcion == "0":
         #SALIR DEL PROGRAMA
