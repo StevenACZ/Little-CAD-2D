@@ -39,9 +39,7 @@ for fila in opciones)))
 print(Tabla)
 
 
-
-
-#SECUENTA WHILE "Seleccionando opcion"
+#SECUENCIA WHILE "Seleccionando opcion"
 while True:
     opcion = input("> Elija opcion: ")
 
@@ -73,8 +71,6 @@ while True:
             if ecuacion >= radio and ecuacion <= radio * 2:
                 matriz[x][y] = "X"
 
-        imprimir_matriz(alto, largo, matriz)  # IMPRIME LA MATRIZ
-
         continue
     if opcion == "3":
         print("EN PROCESO...")
@@ -83,35 +79,6 @@ while True:
         print("EN PROCESO...")
         continue
     if opcion == "5":
-        # DIBUJO
-        alto = 42
-        largo = 82
-
-        matriz = crear_matriz(alto, largo)  # GENERA LA MATRIZ
-        generar_primer_cuadrante(alto, largo, matriz)  # CREA EL PRIMER CUADRANTE
-
-        # CARA
-        for x, y in itertools.product(range(alto), range(largo)):
-            ecuacion = (x - 20) ** 2 + (y - 40) ** 2
-            if ecuacion >= 170 and ecuacion <= 200:
-                matriz[x][y] = "X"
-
-        # OJOS
-        for x, y in itertools.product(range(alto), range(largo)):
-            ecuacion = (x - 15) ** 2 + (y - 33) ** 2
-            if ecuacion >= 2 and ecuacion <= 5:
-                matriz[x][y] = "X"
-        for x, y in itertools.product(range(alto), range(largo)):
-            ecuacion = (x - 15) ** 2 + (y - 47) ** 2
-            if ecuacion >= 2 and ecuacion <= 5:
-                matriz[x][y] = "X"
-
-        # BOCA
-        for x, y in itertools.product(range(alto), range(largo)):
-            ecuacion = (x - 23) ** 2 / 6 + (y - 40) ** 2
-            if ecuacion >= 4 and ecuacion <= 9:
-                matriz[x][y] = "X"
-
         imprimir_matriz(alto, largo, matriz)  # IMPRIME LA MATRIZ
         continue
     if opcion == "6":
@@ -124,6 +91,5 @@ while True:
         #SALIR DEL PROGRAMA
         cerrando_programa()
         break
-
 
 
