@@ -1,13 +1,13 @@
 # Little-CAD-2D
 Proyecto N°1 | Primer semestre UTEC (Universidad de Ingeniería y Tecnología Universidad privada en Perú)
 
-#Requisitos del proyecto:
+## Requisitos del proyecto:
 ```
 - Tener instalado Python en su computador
 - Recomendable tener instaladó PyCharm
 ```
 
-#Descripcion del programa:
+## Descripcion del programa:
 ``` 
 La funcion del programa es dibujar conjuntos basicos de figuras geométricas (Cuadrados, Ciruclos, Lineas, Triangulos, etc.) dentro
 de una matriz de 82 x 42 (largo x alto). Para lo cual el programa usara las ecuaciones geométricas correspondientes, (ecuacion de la 
@@ -16,6 +16,6 @@ dibujarlos. En el caso de las lineas, el programa dibujara solamente un segmento
 coordenadas de ambos puntos. 
 ```  
 
-Integrantes:
+## Integrantes:
 - Steven Angel Coaila Zaa
 - Franco Pacheco
